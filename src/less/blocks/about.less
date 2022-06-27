@@ -1,0 +1,117 @@
+.about {
+  padding: 54px 0 59px 0;
+  box-sizing: border-box;
+  background-color: @light-blue;
+  text-align: center;
+
+  @media(min-width: @md) {
+    padding: 70px 0 100px 0;
+  }
+
+
+  &__title {
+    margin: 0 0 7px 0;
+  }
+
+  &__intro {
+    margin: 0 0 31px 0;
+
+    @media(min-width: @md) {
+      font-size: 18px;
+      line-height: 24px;
+      margin: 0 0 62px 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 23px 11px;
+
+    @media(min-width: @sm) {
+      padding: 0;
+      justify-content: space-between;
+      gap: unset;
+    }
+
+  }
+
+  &__item {
+    width: 134px;
+
+    @media(min-width: @sm) {
+      &.-bee {
+        order: 1;
+      }
+
+      &.-components {
+        order: 2;
+      }
+
+      &.-limit {
+        order: 3;
+      }
+
+      &.-doc {
+        order: 4;
+      }
+    }
+
+    @media(min-width: @md) {
+      width: 174px;
+    }
+
+    @media(min-width: @lg) {
+      width: 193px;
+    }
+  }
+
+  &__img-wrapper {
+    width: 98px;
+
+    @media(min-width: @md) {
+      width: 129px;
+    }
+
+    @media(min-width: @lg) {
+      width: 143px;
+    }
+  }
+
+  &__hexagon {
+    position: relative;
+    height: 154px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 15px 0;
+
+    @media(min-width: @md) {
+      margin: 0 0 40px 0;
+    }
+
+    @media(min-width: @lg) {
+      margin: 0 0 48px 0;
+    }
+
+    &::before {
+      content: url("../img/hexagen.svg");
+      position: absolute;
+      width: 134px;
+      height: 154px;
+
+      @media(min-width: @md) {
+        width: 174px;
+        height: 200px;
+      }
+
+      @media(min-width: @lg) {
+        width: 193px;
+        height: 223px;
+      }
+    }
+  }
+}

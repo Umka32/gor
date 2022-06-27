@@ -1,0 +1,52 @@
+.certificates {
+  background-color: @basic-black;
+  padding: 20px 0;
+  box-sizing: border-box;
+
+  @media(min-width: @md) {
+    padding: 26px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+
+    @media(min-width: @sm) {
+      justify-content: center;
+    }
+  }
+
+  &__badge-1 {
+    width: 77px;
+
+    @media(min-width: @sm) {
+      margin: 0 94px 0 0;
+    }
+
+    @media(min-width: @md) {
+      width: 99px;
+      margin: 0 121px 0 0;
+    }
+  }
+
+  &__badge-2 {
+    width: 86px;
+
+    @media(min-width: @sm) {
+      margin: 0 94px 0 0;
+    }
+
+    @media(min-width: @md) {
+      width: 112px;
+      margin: 0 121px 0 0;
+    }
+  }
+
+  &__badge-3 {
+    width: 75px;
+
+    @media(min-width: @md) {
+      width: 97px;
+    }
+  }
+}

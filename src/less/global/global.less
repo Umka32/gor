@@ -1,0 +1,87 @@
+.-invisible {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+.page {
+  min-width: 360px;
+  margin: 0;
+  font-family: Ubuntu, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: @basic-black;
+
+  @media(min-width: @md) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.container {
+  padding: 0 20px;
+  box-sizing: border-box;
+  min-width: 360px;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  @media(min-width: @sm) {
+    padding: 0;
+    max-width: 725px;
+  }
+
+  @media(min-width: @md) {
+    max-width: 940px;
+  }
+
+  @media(min-width: @lg) {
+    max-width: 1140px;
+  }
+}
+
+.ui-h1  {
+  font-family: Leksa, sans-serif;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 700;
+  color: @basic-black;
+
+  @media(min-width: @sm) {
+    font-size: 30px;
+  }
+
+  @media(min-width: @md) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

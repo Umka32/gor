@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+  <title>Рецепт гор</title>
+</head>
+<body class="page">
+  <header class="page__header">
+    <div class="container header">
+      <div class="header__logo-wrapper">
+        <img src="img/logo.svg" alt="Логотип компании 'Рецепт гор'">
+      </div>
+      <div class="header__list">
+        <div class="header__item">
+          <div class="header__item-img">
+            <img src="img/1.svg" alt="">
+          </div>
+          <p class="header__item-text">Проверено клиническими испытаниями</p>
+        </div>
+        <div class="header__item">
+          <div class="header__item-img">
+            <img src="img/2.svg" alt="">
+          </div>
+          <p class="header__item-text">100% натуральный состав</p>
+        </div>
+        <div class="header__item">
+          <div class="header__item-img">
+            <img src="img/3.svg" alt="">
+          </div>
+          <p class="header__item-text">75% скидка только сегодня</p>
+        </div>
+      </div>
+      <button class="header__btn-callback" type="button" onclick="showModal()">Заказать звонок</button>
+    </div>
+  </header>
+  <main class="">
+    <div class="overlay -invisible" onclick="showModal()"></div>
+    <section class="promo">
+      <div class="container">
+        <div class="promo__wrapper">
+          <h1 class="ui-h1 promo__title">Рецепт гор избавит от боли в суставах навсегда всего за 10 дней!</h1>
+          <p class="promo__intro">Уникальный гель из маточного молочка горных пчел быстро снимет боль в суставах!</p>
+          <div class="promo__img-wrapper">
+            <img src="img/product.png" alt="Фото продукта 'Рецепт гор'">
+          </div>
+          <p class="promo__price">Всего за <b class="price__old">3960 руб.</b> <b class="price__new">990 руб.</b></p>
+          <div class="promo__countdown">
+            <p class="countdown__text">до окончания акции осталось:</p>
+            <div class="countdown__item">
+              <div class="countdown__hours hexagon">--</div>
+              <div class="countdown__hours-text">-</div>
+            </div>
+            <div class="countdown__item">
+              <div class="countdown__minutes hexagon">--</div>
+              <div class="countdown__minutes-text">-</div>
+            </div>
+            <div class="countdown__item">
+              <div class="countdown__seconds hexagon">--</div>
+              <div class="countdown__seconds-text">-</div>
+            </div>
+          </div>
+          <form class="promo__form" action="">
+            <input class="promo__input" type="text" placeholder="Имя" required>
+            <input class="promo__input" type="number" placeholder="Телефон" required>
+            <input class="promo__input" type="text" placeholder="Страна">
+            <button class="promo__btn-callback" type="submit">Заказать звонок</button>
+          </form>
+          <div class="promo__deadline-wrapper">
+            <p class="promo__bought">Сегодня уже купили: <b>229 человек</b></p>
+            <p class="promo__deadline"><b class="promo__deadline-action">Внимание!</b> Акционное предложение ограничено. Осталось товаров со&nbsp;скидкой: <b class="promo__deadline-count">5&nbsp;шт.</b></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="certificates">
+      <div class="container certificates__wrapper">
+        <h2 class="visually-hidden">Сертификаты</h2>
+        <div class="certificates__badge-1">
+          <img src="img/badge-1.png" alt="Сертикат №1">
+        </div>
+        <div class="certificates__badge-2">
+          <img src="img/badge-2.png" alt="Сертикат №2">
+        </div>
+        <div class="certificates__badge-3">
+          <img src="img/badge-3.png" alt="Сертикат №3">
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <h2 class="ui-h1 about__title">Почему нас выбирают?</h2>
+        <p class="about__intro">Наши преимущества.</p>
+        <div class="about__list">
+          <div class="about__item -nature">
+            <div class="about__hexagon">
+              <div class="about__img-wrapper">
+                <img src="img/11.png" alt="Натуральные компоненты">
+              </div>
+            </div>
+            <p>Запускает процесс регенерации поврежденных тканей за счет синергического действия натуральных коспонентов.</p>
+          </div>
+          <div class="about__item -doc">
+            <div class="about__hexagon">
+              <div class="about__img-wrapper">
+                <img src="img/55.png" alt="научно-исследовательский институт">
+              </div>
+            </div>
+            <p>Прошел клинические испытания в Российском научно-исследовательском институте им. Е.М. Александрова.</p>
+          </div>
+          <div class="about__item -limit">
+            <div class="about__hexagon">
+              <div class="about__img-wrapper">
+                <img src="img/44.png" alt="Лимитированный выпуск">
+              </div>
+            </div>
+            <p>Выпущен ограниченной серией.</p>
+          </div>
+          <div class="about__item -bee">
+            <div class="about__hexagon">
+              <div class="about__img-wrapper">
+                <img src="img/22.png" alt="Пчелы">
+              </div>
+            </div>
+            <p>Содержит уникальное маточное молочко горных пчел.</p>
+          </div>
+          <div class="about__item -components">
+            <div class="about__hexagon">
+              <div class="about__img-wrapper">
+                <img src="img/33.png" alt="Компоненты">
+              </div>
+            </div>
+            <p>Устраняет не только боль, но и причину болезни с помощью редкого сочетания компонентов.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="consequences">
+      <div class="container consequences__wrapper">
+        <h2 class="consequences__title">Последствия болезней суставов</h2>
+        <p class="consequences__intro">Болезни суставов превращают жизнь человека в ад!</p>
+        <div class="consequences__list">
+          <div class="consequences__item">
+            <div class="consequences__img-wrapper">
+              <img src="img/111.png" alt="У человека болит спина">
+            </div>
+            <h3 class="consequences__subtitle">Боль</h3>
+            <p class="consequences__text">Невыносимая боль, скованность движений, деформация костей - это лишь некоторые симптомы артрита и артроза.</p>
+          </div>
+          <div class="consequences__item">
+            <div class="consequences__img-wrapper">
+              <img src="img/222.png" alt="Мужчина в инвалидном кресле">
+            </div>
+            <h3 class="consequences__subtitle">инвалидность</h3>
+            <p class="consequences__text">Запущенный артрит и артроз приводит человека к параличу и инвалидности!</p>
+          </div>
+          <div class="consequences__item">
+            <div class="consequences__img-wrapper">
+              <img src="img/333.png" alt="Девушка сидит и плачет">
+            </div>
+            <h3 class="consequences__subtitle">беспомощность</h3>
+            <p class="consequences__text">Полная потеря дееспособности и жизнь без движения - вот, что вам грозит, ксли вы вовремя не предпримите меры!</p>
+          </div>
+        </div>
+        <p class="consequences__promo">А вы готовы до конца своих дней жить, превозмогая боль, в постоянном страхе стать беспомощным?</p>
+      </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__info">ООО "Практика" Инн 77431128959, ОГРН 5157746073580 г.&nbsp;Москва, ул.&nbsp;Клары Цеткин, д.&nbsp;29, корп.&nbsp;1, пом.&nbsp;6, ком.&nbsp;8</p>
+      <a class="footer__privacy-policy" href="#">Политика конфиденциальности</a>
+    </div>
+  </footer>
+
+  <section class="modal -invisible">
+    <div class="modal__content">
+      <span class="close" onclick="showModal()"></span>
+      <div class="modal__wrapper">
+        <h1 class="ui-h1 promo__title">Рецепт гор избавит от боли в суставах навсегда всего за 10 дней!</h1>
+        <p class="promo__intro">Уникальный гель из маточного молочка горных пчел быстро снимет боль в суставах!</p>
+        <div class="promo__img-wrapper -modal">
+          <img src="img/product.png" alt="">
+        </div>
+        <p class="promo__price">Всего за <b class="price__old">3960 руб.</b> <b class="price__new">990 руб.</b></p>
+        <div class="promo__countdown">
+          <p class="countdown__text">до окончания акции осталось:</p>
+          <div class="countdown__item">
+            <div class="countdown__hours hexagon">--</div>
+            <div class="countdown__hours-text">-</div>
+          </div>
+          <div class="countdown__item">
+            <div class="countdown__minutes hexagon">--</div>
+            <div class="countdown__minutes-text">-</div>
+          </div>
+          <div class="countdown__item">
+            <div class="countdown__seconds hexagon">--</div>
+            <div class="countdown__seconds-text">-</div>
+          </div>
+        </div>
+        <form class="promo__form modal__form" action="">
+          <input class="promo__input" type="text" placeholder="Имя" required>
+          <input class="promo__input" type="tel" placeholder="Телефон" required>
+          <input class="promo__input" type="text" placeholder="Страна">
+          <button class="promo__btn-callback" type="submit">Заказать звонок</button>
+        </form>
+        <div class="promo__deadline-wrapper">
+          <p class="promo__bought">Сегодня уже купили: <b>229 человек</b></p>
+          <p class="promo__deadline"><b class="promo__deadline-action">Внимание!</b> Акционное предложение ограничено. Осталось товаров со&nbsp;скидкой: <b class="promo__deadline-count">5&nbsp;шт.</b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="notifications notifications__1 hide">
+    <div class="notifications__close" onclick="closeNotification(this)"></div>
+    <div class="notifications__img-wrapper">
+      <img src="img/users.svg" alt="">
+    </div>
+    <p class="notifications__text">Количество посетителей на сайте:</p>
+  </div>
+  <div class="notifications notifications__2 hide">
+    <div class="notifications__close" onclick="closeNotification(this)"></div>
+    <div class="notifications__img-wrapper">
+      <img src="img/call.svg" alt="">
+    </div>
+    <p class="notifications__text">Ольга М. сделала заявку на обратный звонок.</p>
+  </div>
+  <div class="notifications notifications__3 hide">
+    <div class="notifications__close" onclick="closeNotification(this)"></div>
+    <div class="notifications__img-wrapper">
+      <img src="img/cart.svg" alt="">
+    </div>
+    <p class="notifications__text">Ольга М. только что совершила покупку на сумму 5600 руб.</p>
+  </div>
+</body>
+</html>

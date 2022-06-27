@@ -1,0 +1,70 @@
+.notifications {
+  background-color: @basic-black;
+  color: @basic-white;
+  padding: 40px 40px 40px 30px;
+  box-sizing: border-box;
+  width: 322px;
+  position: fixed;
+  bottom: 0;
+  left: 19px;
+  display: flex;
+  align-items: center;
+  transition: left 0.3s;
+
+  @media(min-width: @md) {
+    top: 14px;
+    bottom: auto;
+  }
+
+  @media(min-width: @lg) {
+    left: auto;
+    right: 19px;
+    transition: right 0.3s;
+  }
+
+  &__img-wrapper {
+    width: 43px;
+    margin: 0 10px 0 0;
+  }
+
+  &__text {
+    width: 195px;
+  }
+
+  &__close {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 15px;
+      background-color: @basic-yellow;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.hide {
+  left: -335px;
+  transition: left 0.3s;
+
+  @media(min-width: @lg) {
+    left: auto;
+    right: -335px;
+    transition: right 0.3s;
+  }
+}
